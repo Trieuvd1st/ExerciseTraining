@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDK-1F-QOZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Your meals-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExerciseTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1PE-9g-0zj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCell" rowHeight="92" id="ADd-kX-Nph" customClass="FoodTableViewCell" customModule="ExerciseTraining" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADd-kX-Nph" id="81V-uY-rnq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Món 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-Qn-5Bw">
+                                                    <rect key="frame" x="120" y="10" width="60.5" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-Cv-xZN" customClass="RatingStarCustom" customModule="ExerciseTraining" customModuleProvider="target">
+                                                    <rect key="frame" x="120" y="46.5" width="240" height="38"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-nM-tpl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="38"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-Gm-ulr">
+                                                            <rect key="frame" x="48" y="0.0" width="48" height="38"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbL-CT-kZr">
+                                                            <rect key="frame" x="96" y="0.0" width="48" height="38"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bag-lY-YlI">
+                                                            <rect key="frame" x="144" y="0.0" width="48" height="38"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZf-Qk-bRl">
+                                                            <rect key="frame" x="192" y="0.0" width="48" height="38"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                            </accessibility>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <connections>
+                                                        <outlet property="btnStar1" destination="gsR-nM-tpl" id="cb9-0e-ZjX"/>
+                                                        <outlet property="btnStar2" destination="WJg-Gm-ulr" id="2BD-gr-rDN"/>
+                                                        <outlet property="btnStar3" destination="DbL-CT-kZr" id="HUS-a1-DEa"/>
+                                                        <outlet property="btnStar4" destination="Bag-lY-YlI" id="R11-11-h2e"/>
+                                                        <outlet property="btnStar5" destination="vZf-Qk-bRl" id="oZl-hp-8KT"/>
+                                                    </connections>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V46-1Z-ECz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="92"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="7pc-vc-1l5"/>
+                                                        <constraint firstAttribute="height" constant="100" id="PcG-ff-Uwj"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="V46-1Z-ECz" firstAttribute="top" secondItem="81V-uY-rnq" secondAttribute="top" id="F7d-zL-xQC"/>
+                                                <constraint firstItem="LLp-Cv-xZN" firstAttribute="leading" secondItem="V46-1Z-ECz" secondAttribute="trailing" constant="20" id="TrC-ZP-J1q"/>
+                                                <constraint firstItem="Y2L-Qn-5Bw" firstAttribute="leading" secondItem="V46-1Z-ECz" secondAttribute="trailing" constant="20" id="WgM-QI-3Ju"/>
+                                                <constraint firstItem="LLp-Cv-xZN" firstAttribute="top" secondItem="Y2L-Qn-5Bw" secondAttribute="bottom" constant="10" id="aZP-f0-rXb"/>
+                                                <constraint firstAttribute="bottom" secondItem="V46-1Z-ECz" secondAttribute="bottom" id="dNg-om-YSI"/>
+                                                <constraint firstItem="V46-1Z-ECz" firstAttribute="leading" secondItem="81V-uY-rnq" secondAttribute="leading" id="fgk-Om-0NT"/>
+                                                <constraint firstItem="Y2L-Qn-5Bw" firstAttribute="top" secondItem="81V-uY-rnq" secondAttribute="top" constant="10" id="udz-J8-qe2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imFood" destination="V46-1Z-ECz" id="Eec-Uf-s5Z"/>
+                                            <outlet property="lbNameFood" destination="Y2L-Qn-5Bw" id="llh-fK-HmK"/>
+                                            <outlet property="rscRating" destination="LLp-Cv-xZN" id="JYb-pv-3ck"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1qZ-59-d8U"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VoT-27-ex1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your meals" id="v78-Ge-eVw">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="b7Q-cH-hXB" userLabel="Edit">
+                            <connections>
+                                <action selector="onEditItem:" destination="BYZ-38-t0r" id="DQb-mk-NaZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="lsY-bE-dvn">
+                            <connections>
+                                <action selector="onAddItem:" destination="BYZ-38-t0r" id="zf4-AD-Geu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnEdit" destination="b7Q-cH-hXB" id="rby-ad-KNc"/>
+                        <outlet property="tbvFood" destination="1PE-9g-0zj" id="1tu-6U-jh6"/>
+                        <segue destination="A4D-ME-i9I" kind="show" identifier="nextToDetail" id="Hwi-iv-lhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="54.910714285714285"/>
+        </scene>
+        <!--New Meal-->
+        <scene sceneID="tlv-gO-KKg">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A4D-ME-i9I" customClass="DetailViewController" customModule="ExerciseTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UlG-8S-O9p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-vK-SfG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gai_xinh.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-eo-yUv">
+                                <rect key="frame" x="20" y="152" width="374" height="300"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="wiL-S6-oBe"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="T8n-XN-vIr">
+                                <rect key="frame" x="87" y="482" width="240" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-Gz-4Zh">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="38"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                        <connections>
+                                            <action selector="onStar1Select:" destination="A4D-ME-i9I" eventType="touchUpInside" id="0iG-Ra-lK7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-ig-PMj">
+                                        <rect key="frame" x="48" y="0.0" width="48" height="38"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                        <connections>
+                                            <action selector="onStar2Select:" destination="A4D-ME-i9I" eventType="touchUpInside" id="Uat-aC-r5O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVi-9x-3en">
+                                        <rect key="frame" x="96" y="0.0" width="48" height="38"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                        <connections>
+                                            <action selector="onStar3Select:" destination="A4D-ME-i9I" eventType="touchUpInside" id="j67-fU-60a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-IZ-o26">
+                                        <rect key="frame" x="144" y="0.0" width="48" height="38"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                        <connections>
+                                            <action selector="onStar4Select:" destination="A4D-ME-i9I" eventType="touchUpInside" id="Adi-Wb-279"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km9-L8-5Kn">
+                                        <rect key="frame" x="192" y="0.0" width="48" height="38"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_star.png"/>
+                                        <connections>
+                                            <action selector="onStar5Select:" destination="A4D-ME-i9I" eventType="touchUpInside" id="zQe-ND-Lwd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Iz-I6-6a5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KWe-vK-SfG" firstAttribute="top" secondItem="5Iz-I6-6a5" secondAttribute="top" id="3vk-Ba-Dh9"/>
+                            <constraint firstItem="kgg-eo-yUv" firstAttribute="top" secondItem="KWe-vK-SfG" secondAttribute="bottom" constant="30" id="E6N-Yi-d3I"/>
+                            <constraint firstItem="T8n-XN-vIr" firstAttribute="leading" secondItem="5Iz-I6-6a5" secondAttribute="leading" constant="87" id="L64-QI-YEK"/>
+                            <constraint firstItem="kgg-eo-yUv" firstAttribute="leading" secondItem="5Iz-I6-6a5" secondAttribute="leading" constant="20" id="Rg6-Wt-nDz"/>
+                            <constraint firstItem="5Iz-I6-6a5" firstAttribute="trailing" secondItem="T8n-XN-vIr" secondAttribute="trailing" constant="87" id="UGx-1v-5U9"/>
+                            <constraint firstItem="5Iz-I6-6a5" firstAttribute="trailing" secondItem="kgg-eo-yUv" secondAttribute="trailing" constant="20" id="VWK-aq-5qV"/>
+                            <constraint firstItem="KWe-vK-SfG" firstAttribute="leading" secondItem="5Iz-I6-6a5" secondAttribute="leading" id="iXl-hg-6hY"/>
+                            <constraint firstItem="T8n-XN-vIr" firstAttribute="top" secondItem="kgg-eo-yUv" secondAttribute="bottom" constant="30" id="lFv-u0-XQ5"/>
+                            <constraint firstItem="5Iz-I6-6a5" firstAttribute="trailing" secondItem="KWe-vK-SfG" secondAttribute="trailing" id="xBF-69-KiH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Meal" id="OYa-sA-xag">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Xeu-8L-1Ju">
+                            <connections>
+                                <action selector="onCancel:" destination="A4D-ME-i9I" id="NxL-iq-4NX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Save" id="hDo-4S-Upi">
+                            <connections>
+                                <action selector="onSave:" destination="A4D-ME-i9I" id="zHj-8x-y4s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnSave" destination="hDo-4S-Upi" id="Eqw-xl-tV1"/>
+                        <outlet property="btnStar1" destination="Maj-Gz-4Zh" id="VN0-NL-OSE"/>
+                        <outlet property="btnStar2" destination="7QM-ig-PMj" id="0Sa-t7-nsY"/>
+                        <outlet property="btnStar3" destination="zVi-9x-3en" id="9jY-9o-iZ9"/>
+                        <outlet property="btnStar4" destination="zDa-IZ-o26" id="nAB-cT-hAv"/>
+                        <outlet property="btnStar5" destination="Km9-L8-5Kn" id="jQB-pm-Bcf"/>
+                        <outlet property="imageFood" destination="kgg-eo-yUv" id="wnY-fW-NAs"/>
+                        <outlet property="tfNameFood" destination="KWe-vK-SfG" id="sNX-JG-tGq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBK-E9-Enh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740.5797101449277" y="54.910714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eu0-2L-eI6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDK-1F-QOZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="caa-Pb-mCo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="twy-rI-jCI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYE-24-9Lp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gai_xinh.jpg" width="561" height="647"/>
+        <image name="ic_star.png" width="24" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
